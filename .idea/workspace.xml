@@ -2,76 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10119326-385a-438b-85ee-b03b68bc4911" name="Default" comment="working REST api">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/SmallWorld_Script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/signup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/signupX.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/untitled.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/error.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Flight_Icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Hustlin_NewYork_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Kevin Big.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Kevin_Small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Marvellous_Madrid_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Scenic_Switzerland_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/Flight_Icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/Hustlin_NewYork_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/Kevin Big.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/Kevin_Small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/Marvellous_Madrid_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/Scenic_Switzerland_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/Vicious_Vegas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/Vicious_Vegas_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/World_clipart.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/college-student-thumbs-up.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/example_small_world.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/example_small_world_new.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/kevin_happy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/outdoor_seattle_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/romanti_dinner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/small_world_ex2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/small_world_ex3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/swan_rough.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/switzerland.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Slut/world_minimalist.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Vicious_Vegas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/Vicious_Vegas_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/World_clipart.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/college-student-thumbs-up.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/example_small_world.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/example_small_world_new.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/kevin_happy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/outdoor_seattle_Panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/romanti_dinner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/small_world_ex2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/small_world_ex3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/swan_rough.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/switzerland.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/world_minimalist.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/logo.png" afterPath="$PROJECT_DIR$/public/images/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/feed.html" afterPath="$PROJECT_DIR$/public/feed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/layout.jade" afterPath="$PROJECT_DIR$/public/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/login.html" afterPath="$PROJECT_DIR$/public/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/preferences.html" afterPath="$PROJECT_DIR$/public/preferences.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/trip.html" afterPath="$PROJECT_DIR$/public/trip.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/usertrips.js" afterPath="$PROJECT_DIR$/routes/usertrips.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/TripConstructor.js" afterPath="$PROJECT_DIR$/util/TripConstructor.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -112,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TripConstructor.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TripConstructor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/util/TripConstructor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1537">
-              <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+            <state relative-caret-position="261">
+              <caret line="145" column="32" lean-forward="false" selection-start-line="145" selection-start-column="32" selection-end-line="145" selection-end-column="32" />
               <folding>
                 <element signature="e#9097#11876#0" expanded="false" />
               </folding>
@@ -179,14 +110,14 @@
       <file leaf-file-name="preferences.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/preferences.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
+            <state relative-caret-position="-569">
               <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="untitled.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="untitled.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/untitled.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -234,7 +165,7 @@
     </push-targets>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response131.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response137.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -271,10 +202,10 @@
         <option value="$PROJECT_DIR$/util/AmadeusSandbox.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/usertrips.js" />
-        <option value="$PROJECT_DIR$/util/TripConstructor.js" />
         <option value="$PROJECT_DIR$/public/trip.html" />
         <option value="$PROJECT_DIR$/public/feed.html" />
         <option value="$PROJECT_DIR$/public/preferences.html" />
+        <option value="$PROJECT_DIR$/util/TripConstructor.js" />
       </list>
     </option>
   </component>
@@ -1442,7 +1373,7 @@
       <workItem from="1507787459363" duration="1489000" />
       <workItem from="1508001740535" duration="3557000" />
       <workItem from="1508008967354" duration="20822000" />
-      <workItem from="1508042411864" duration="23755000" />
+      <workItem from="1508042411864" duration="25177000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1506538992656</created>
@@ -1574,7 +1505,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198334000" />
+    <option name="totallyTimeSpent" value="199756000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1595,7 +1526,7 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24971624" sideWeight="0.525119" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23041998" sideWeight="0.49391857" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13590693" sideWeight="0.23193277" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24971624" sideWeight="0.47488102" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24971624" sideWeight="0.47488102" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14912744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25652668" sideWeight="0.4918033" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13907985" sideWeight="0.50653595" order="3" side_tool="true" content_ui="tabs" />
@@ -1952,16 +1883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/TripConstructor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1537">
-          <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
-          <folding>
-            <element signature="e#9097#11876#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/trip.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4400">
@@ -1980,19 +1901,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/preferences.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/untitled.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/preferences.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-569">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/TripConstructor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="145" column="32" lean-forward="false" selection-start-line="145" selection-start-column="32" selection-end-line="145" selection-end-column="32" />
+          <folding>
+            <element signature="e#9097#11876#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

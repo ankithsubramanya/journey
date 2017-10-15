@@ -143,7 +143,7 @@ var packageTrips = function (city, budget, departureDate, leaveDate) {
             var flightList = data.results;
             //console.log(flightList);
             //flightList = JSON.parse(flightList);
-            var requiredSize = 4;
+            var requiredSize = 5;
             if (requiredSize < flightList.length) {
                 flightList = jsonChopper(flightList, requiredSize);
             }
