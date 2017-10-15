@@ -31,23 +31,24 @@ var handleError = function handleError(res, reason, message, code) {
  * GET trip objects constructed to user preferences
  */
 
-router.get('/:id', function (req, res, next) {
-    var id = req.params.id;
+router.get('/:trip_budget/:origin_city/:departure_date/:leave_date', function (req, res, next) {
+    //var id = req.params.id;
     var tripListJson = null;
-    var tripBudget = null;
+    var tripBudget = req.params.trip_budget;
     var user = null;
-    var departureDate = null;
+    var departureDate = req.params.departure_date;
     var duration = null;
-    var originCity = null;
-    var leaveDate = null;
+    var originCity = req.params.origin_city;
+    var leaveDate = req.params.leave_date;
 
-    if (user == null) {
+    //console.log(tripBudget);
+    /*if (user == null) {
         getUserById(id).then(function (data) {
             user = data;
             tripBudget = user.budget;
             departureDate = user.departureDate;
             originCity = user.city;
-            leaveDate = user.leaveDate;
+            leaveDate = user.leaveDate;*/
             //tripListJson = flightInspiration(originCity, flightBudget, departureDate, duration);
             TripConstructor.packageTrips(originCity, tripBudget, departureDate, leaveDate).then(function (data) {
                     tripListJson = data;
@@ -58,8 +59,8 @@ router.get('/:id', function (req, res, next) {
             );
 
         });
-    };
-});
+
+//}});
 /**
  * Get a user from the database with the given id
  * @param id

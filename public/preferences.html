@@ -53,19 +53,15 @@
                             </div>
                             <div class="card-body">
                                 <div class="input-group">
-                                    <span class="input-group-addon">Start Date: </span>
+                                    <span class="input-group-addon">Start Date(yyyy-mm-dd): </span>
                                     <input type="text" class="form-control" id="date">
                                 </div>
 
                                 <div class="input-group">
-                                    <span class="input-group-addon">End Date: </span>
+                                    <span class="input-group-addon">End Date (yyyy-mm-dd): </span>
                                     <input type="text" class="form-control" id="end">
                                 </div>
 
-                                <div class="input-group">
-                                    <span class="input-group-addon">Duration </span>
-                                    <input type="text" class="form-control" id="duration">
-                                </div>
 
 
                             </div>
@@ -142,7 +138,7 @@
                             </div>
                         </div>
                         <br>
-                        <button class="btn btn-primary btn-lg btn-block" onclick="feed()">Personalize Feed</button>
+                        <button class="btn btn-primary btn-lg btn-block" onclick="sendPrefs()">Personalize Feed</button>
 
                     </div>
                 </div>
@@ -152,36 +148,7 @@
     </div>
 </center>
 
-<script>
-    var budget, date, end, airport, url , duration, hotelreg;
-
-
-
-
-    var feed = function(){
-
-        budget = document.getElementById("budget").value;
-        date = document.getElementById("date").value;
-        end = document.getElementById("end").value;
-        airport = document.getElementById("airport").value;
-        duration = document.getElementById("duration").value;
-
-
-        if(budget == "" || budget == undefined) budget = 1000;
-        if(date == "" || date == undefined) date = "2017-10-01";
-        if(end == "" || end == undefined) end = "2017-10-11";
-        if(airport == "" || airport == undefined) airport = "NYC";
-        if(duration == "" || duration == undefined) duration = 10;
-
-
-        url = "/api/usertrips/" + budget + "/" + date + "/" + duration + "/" + airport + "/" + end + "/";
-        sessionStorage.setItem("url", url);
-
-        //document.write(url);
-        window.location.href = "feed.html";
-
-    }
-
+<script src = "SmallWorld_Script.js">
 </script>
 
 

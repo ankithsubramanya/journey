@@ -1,4 +1,4 @@
-var apiKey = "FBIg0ZH9w6GpqX0FIlDzp51H2GffPziy";
+var apiKey = "HIPoUButZK43WQj0ac7JmjDIytu7LG18";
 var googleApiKey = "AIzaSyDOjFExTVI96xAH5TlLZ0_-4eRmjG9Lt-A";
 var GOOGLE_IMAGE_URL = "https://maps.googleapis.com/maps/api/place/photo?";
 var GOOGLE_RESULT_IMAGE_URL = "https://maps.googleapis.com/maps/api/place/photo?";
@@ -13,12 +13,12 @@ var http = require('http');
 
 // calculates daily spending budget from total budget
 var getDailyBudget = function (totalBudget, numberOfDays) {
-    var d = (totalBudget / numberOfDays) * 0.3;
+    var d = (totalBudget / numberOfDays) * 0.1;
     return (Math.floor(d));
 };
 // calculates flight budget from total budget
 var getFlightBudget = function (totalBudget, numberOfDays) {
-    var d = 0.1 * getDailyBudget(totalBudget, numberOfDays) * numberOfDays;
+    var d = 0.2 * totalBudget;
     console.log(d);
     return Math.floor(d);
     //return totalBudget;
@@ -128,6 +128,10 @@ var flightArrayList = new ArrayList();
  */
 
 var packageTrips = function (city, budget, departureDate, leaveDate) {
+    resultList = new ArrayList();
+    listWithHotel = new ArrayList();
+    finalList = new ArrayList();
+    flightArrayList = new ArrayList();
     return new Promise(function (resolve, reject) {
         var duration = durationFinder(departureDate, leaveDate);
         var flightBudget = getFlightBudget(budget, duration);
@@ -147,23 +151,24 @@ var packageTrips = function (city, budget, departureDate, leaveDate) {
                 flightArrayList.add(flightList[i]);
             }
             hotelAdder(departureDate, leaveDate, hotelBudget, dailyBudget).then(function (data) {
-                    if (data == null) {
+                    /*if (data == null) {
                         reject(err);
-                    }
-                    else {
+                    }*/
+                    //else {
                         resolve(data);
-                        var updatedList = data;
+
+                        /*var updatedList = data;
                         for (var i = 0; i < updatedList.length; i++){
                             listWithHotel.add(updatedList[i]);
                         }
                         (pointsOfInterestAdder(data)).then(function (data) {
-                            if (data == null){
-                                reject(err);
-                            } else {
+                            //if (data == null){
+                                //reject(err);
+                            //} else {
                                 resolve(data);
-                            }
-                        });
-                    }
+
+                        });*/
+                    //}
                 }
             )
             })
@@ -186,11 +191,11 @@ var hotelAdder = function (departureDate, leaveDate, hotelBudget, dailyBudget) {
     for (var flight of flightArrayList) {
         var resPromise = hotelSearch(flight.destination, departureDate, leaveDate, hotelBudget).then(function (data) {
             var trip = {
-                "city": "",
+                "city": "East Myrwich",
                 "city_image_link": "",
                 "from_date": "",
                 "to_date": "",
-                "total_budget": "",
+                "total_budget": "302",
                 "daily_budget": "",
                 "flight_string": "",
                 "flight_cost": "",
@@ -201,16 +206,16 @@ var hotelAdder = function (departureDate, leaveDate, hotelBudget, dailyBudget) {
                 "city_code" : ""
             }
             var hotel = (data.results);
-            if (hotel != undefined && hotel[0] != undefined) {
+            if (hotel != undefined && hotel[0] != undefined && hotel[0].address.city != 0) {
                 //console.log(hotel[0]);
                 trip.city = hotel[0].address.city;
                 //trip.city_image_link = hotel.images[0];
                 trip.from_date = departureDate;
                 trip.to_date = leaveDate;
-                trip.total_budget = (hotel[0].min_daily_rate.amount)*duration + dailyBudget*duration + flight.cost;
+                trip.total_budget = Math.floor(parseFloat((hotel[0].min_daily_rate.amount)*duration) + parseFloat(dailyBudget*duration) + parseFloat(flight.price));
                 trip.daily_budget = dailyBudget;
                 trip.flight_string = flight.airline;
-                trip.flight_cost = flight.cost;
+                trip.flight_cost = flight.price;
                 trip.hotel_name = hotel[0].property_name;
                 trip.hotel_night_price = hotel[0].min_daily_rate.amount;
                 trip.hotel_image_link = hotel[0].images[0];
@@ -332,6 +337,7 @@ var pointsOfInterestAdder = function (resultList) {
     for (var trip of listWithHotel) {
         var resPromise = pointOfInterest(trip.city_code).then(function (data) {
             var poiData = data;
+            console.log(poiData);
             if (poiData != undefined) {
                 trip.points_of_interest = poiData.points_of_interest;
                 finalList.add(trip);

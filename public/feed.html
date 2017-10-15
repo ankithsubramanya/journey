@@ -3,6 +3,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title>Small World - your personalized trip feed</title>
+    <script src = "SmallWorld_Script.js"></script>
 </head>
 <body>
 
@@ -24,218 +25,107 @@
 </nav>
 
 <div class="card" id="FeedCard">
-    <!--<div class="card-header"><h6><center>Your Personalized Trip Feed</center></h6></div>-->
+    <div class="card-header"><h3><center>Your Personalized Trip Feed</center></h3></div>
     <div class="card-body rounded">
 
 
-        <div class ="card-deck" id="1">
-            <div class="card" id="1.1">
-                <div class="card-header">
-                    <h4 class="card-title" id ="1.1.city"></h4>
-                </div>
-                <img class="card-img-top" id="1.1.image" height="30%" width="42">
-                <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-addon">$</span>
-                        <button name="budget" class="btn btn-primary btn-block" id = "1.1.price"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="1.2">
-                <div class="card-header">
-                    <h4 class="card-title" id ="1.2.city"></h4>
-                </div>
-                <img class="card-img-top" id="1.2.image" height="30%">
-                <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-addon">$</span>
-                        <button name="budget" class="btn btn-primary btn-block" id = "1.2.price"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="1.3">
-                <div class="card-header">
-                    <h4 class="card-title" id ="1.3.city"></h4>
-                </div>
-                <img class="card-img-top" id="1.3.image"height="30%" >
-                <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-addon">$</span>
-                        <button name="budget" class="btn btn-primary btn-block" id = "1.3.price"></button>
-                    </div>
-                </div>
-            </div>
+        <div class ="card-deck" >
+          <div class="card" name="trip">
+            <div class="card-header"><h4 align = "center" class="card-title" name ="city">Las Vegas</h4></div>
+            <img class="card-img-top" src="/images/1.jpg" name="image" height="30%" width="42">
+            <div class="card-body">
+                <div class="input-group"><span class="input-group-addon">$</span><button name="budget" class="btn btn-primary btn-block">900</button></div>
+          </div></div>
+
+          <div class="card" name="trip">
+            <div class="card-header"><h4 align = "center" class="card-title" name ="city">Las Vegas</h4></div>
+            <img class="card-img-top" src="/images/1.jpg" name="image" height="30%" width="42">
+            <div class="card-body">
+                <div class="input-group"><span class="input-group-addon">$</span><button name="budget" class="btn btn-primary btn-block">900</button></div>
+          </div></div>
+
+          <div class="card" name="trip">
+            <div class="card-header"><h4 align = "center" class="card-title" name ="city">Las Vegas</h4></div>
+            <img class="card-img-top" src="/images/1.jpg" name="image" height="30%" width="42">
+            <div class="card-body">
+                <div class="input-group"><span class="input-group-addon">$</span><button name="budget" class="btn btn-primary btn-block">900</button></div>
+          </div></div>
         </div>
 
+        <br>
 
-        <div class ="card-deck" id="2">
-            <div class="card" id="2.1">
-                <div class="card-header">
-                    <h4 class="card-title" id ="2.1.city"></h4>
-                </div>
-                <img class="card-img-top" id="2.1.image"height="30%" >
-                <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-addon">$</span>
-                        <button name="budget" class="btn btn-primary btn-block" id = "2.1.price"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="2.2">
-                <div class="card-header">
-                    <h4 class="card-title" id ="2.2.city"></h4>
-                </div>
-                <img class="card-img-top" id="2.2.image" height="30%" >
-                <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-addon">$</span>
-                        <button name="budget" class="btn btn-primary btn-block" id = "2.2.price"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="2.3">
-                <div class="card-header">
-                    <h4 class="card-title" id ="2.3.city"></h4>
-                </div>
-                <img class="card-img-top" id="2.3.image" height="30%">
-                <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-addon">$</span>
-                        <button name="budget" class="btn btn-primary btn-block" id = "2.3.price"></button>
-                    </div>
-                </div>
-            </div>
+        <div class ="card-deck" >
+          <div class="card" name="trip">
+            <div class="card-header"><h4 align = "center" class="card-title" name ="city">Las Vegas</h4></div>
+            <img class="card-img-top" src="/images/1.jpg" name="image" height="30%" width="42">
+            <div class="card-body">
+                <div class="input-group"><span class="input-group-addon">$</span><button name="budget" class="btn btn-primary btn-block">900</button></div>
+          </div></div>
+
+          <div class="card" name="trip">
+            <div class="card-header"><h4 align = "center" class="card-title" name ="city">Las Vegas</h4></div>
+            <img class="card-img-top" src="/images/1.jpg" name="image" height="30%" width="42">
+            <div class="card-body">
+                <div class="input-group"><span class="input-group-addon">$</span><button name="budget" class="btn btn-primary btn-block">900</button></div>
+          </div></div>
+
+          <div class="card" name="trip">
+            <div class="card-header"><h4 align = "center" class="card-title" name ="city">Las Vegas</h4></div>
+            <img class="card-img-top" src="/images/1.jpg" name="image" height="30%" width="42">
+            <div class="card-body">
+                <div class="input-group"><span class="input-group-addon">$</span><button name="budget" class="btn btn-primary btn-block">900</button></div>
+          </div></div>
         </div>
 
-        <div class ="card-deck" id="3">
-            <div class="card" id="3.1">
-                <div class="card-header">
-                    <h4 class="card-title" id ="3.1.city"></h4>
-                </div>
-                <img class="card-img-top" id="3.1.image" height="30%" >
-                <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-addon">$</span>
-                        <button name="budget" class="btn btn-primary btn-block" id = "3.1.price"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="3.2">
-                <div class="card-header">
-                    <h4 class="card-title" id ="3.2.city"></h4>
-                </div>
-                <img class="card-img-top" id="3.2.image" height="30%">
-                <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-addon">$</span>
-                        <button name="budget" class="btn btn-primary btn-block" id = "3.2.price"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card" id="3.3">
-                <div class="card-header">
-                    <h4 class="card-title" id ="3.3.city"></h4>
-                </div>
-                <img class="card-img-top" id="3.3.image" height="30%">
-                <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-addon">$</span>
-                        <button name="budget" class="btn btn-primary btn-block" id = "3.3.price"></button>
-                    </div>
-                </div>
-            </div>
+        <br>
+
+        <div class ="card-deck" >
+          <div class="card" name="trip">
+            <div class="card-header"><h4 align = "center" class="card-title" name ="city">Las Vegas</h4></div>
+            <img class="card-img-top" src="/images/1.jpg" name="image" height="30%" width="42">
+            <div class="card-body">
+                <div class="input-group"><span class="input-group-addon">$</span><button name="budget" class="btn btn-primary btn-block">900</button></div>
+          </div></div>
+
+          <div class="card" name="trip">
+            <div class="card-header"><h4 align = "center" class="card-title" name ="city">Las Vegas</h4></div>
+            <img class="card-img-top" src="/images/1.jpg" name="image" height="30%" width="42">
+            <div class="card-body">
+                <div class="input-group"><span class="input-group-addon">$</span><button name="budget" class="btn btn-primary btn-block">900</button></div>
+          </div></div>
+
+          <div class="card" name="trip">
+            <div class="card-header"><h4 align = "center" class="card-title" name ="city">Las Vegas</h4></div>
+            <img class="card-img-top" src="/images/1.jpg" name="image" height="30%" width="42">
+            <div class="card-body">
+                <div class="input-group"><span class="input-group-addon">$</span><button name="budget" class="btn btn-primary btn-block">900</button></div>
+          </div></div>
         </div>
 
-        <br><br>
+        <br>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <center><button class="btn btn-primary btn-lg" id="Prev" onclick="counter --; loadPage(trips, counter);">Previous Feed</button></center>
-                </div>
-                <div class="col">
-                    <center><button class="btn btn-primary btn-lg" id="Next" onclick="counter ++; loadPage(trips, counter);">Next Feed</button></center>
-                </div>
-            </div>
-        </div>
+        <br>
+
+
     </div>
 
 </div>
 
 
-
-
-
-
-
-
 <script>
-    txt = "<div class = \'card-header\'> <h2 class=\'card-title\'>Your Personalized Trip Feed</h2> </div> <div class=\'card-body\'>";
-    trips = [{"city" : "Bangalore",
-        "price" : 300,
-        "image" : ".//images//2.jpg"},
-        {"city" : "Switzerland",
-            "price" : 300,
-            "image" : ".//images//4.jpg"},
-        {"city" : "Madrid",
-            "price" : 300,
-            "image" : ".//images//1.jpg"}];
+  var index = 0;
+    //var urlx = "http://localhost:3000/api/usertrips/59d2f401c5f60cec5c5ca6d1/";
+    var urlx = sessionStorage.getItem("url");
+    console.log(urlx);
+    var trip = [];
 
-
-
-    var counter = 1;
-
-    if(counter === 1)
-        document.getElementById("Prev").isDisabled = true;
-
-
-
-    var loadPage = function(trips, counter){
-        //var urlx = sessionStorage.getItem("url");
-        var urlx = "/api/usertrips/1000/2017-10-01/10/NYC/2017-10-11/";
-        trips = JSON.parse(jQuery.get(urlx));
-        for (i=0; i < 3; i++){
-            for(j=0;j<3;j++){
-                index = i % 3;
-                y = i+1;
-                x = j+1;
-                id = x + "." + y + ".";
-
-                //document.write(id)
-
-                var r = Math.floor((Math.random() * 11)+1);
-
-                var image = "./images/" + r + ".jpg";
-
-
-                document.getElementById(id + "city").innerHTML = trips[index].destination;
-                document.getElementById(id + "image").src = image;
-                document.getElementById(id + "price").onclick = goToTrip(index);
-                document.getElementById(id + "price").innerHTML = ((trips[index].price)*4).toString();
-
-            }
-        }
-    }
-
-    var goToTrip = function(index){
-        return function () {
-            var price, departuredate, leavedate, city, url;
-
-            price = trips[index].price * 2;
-            departuredate = trips[index].departuredate;
-            leavedate = trips[index].leavedate;
-            city = trips[index].city;
-
-            url = "journey365.herokuapp.com/api/"+price+"/"+departuredate+"/"+leavedate+"/"+city+"/";
-            sessionStorage.setItem("url", url);
-            sessionStorage.setItem("trip", JSON.stringify(trips[index]));
-            //document.write(item);
-            var sendlink = "trip.html";
-            window.location.href = sendlink;
-        }
-    }
-
-    loadPage(trips, 1);
+    loadFeed(testTrips, 0);
+    if(trip.length == 0){
+      $.get( urlx, function(data){
+          console.log(data);
+          trip = data;
+          loadFeed(trip, 0);
+      });}
 
 </script>
 
