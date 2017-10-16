@@ -232,6 +232,7 @@ var hotelAdder = function (departureDate, leaveDate, hotelBudget, dailyBudget) {
 }
 
 /**
+ * @TODO package poi adder into result json
  * Method to calculate duration of the trip given the departure and arrival date in the string format YYYY-mm-dd
  * @param departureDate
  * @param arrivalDate
