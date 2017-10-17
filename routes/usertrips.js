@@ -26,6 +26,34 @@ var handleError = function handleError(res, reason, message, code) {
     console.log("ERROR: " + reason);
     res.status(code || 500).json({"error": message});
 };
+router.get('/:id', function (req, res, next) {
+    var tripListJson = null;
+    var tripBudget = null;
+    var user = null;
+    var departureDate = null;
+    var duration = null;
+    var originCity = null;
+    var leaveDate = null;
+    if (user == null) {
+        getUserById(id).then(function (data) {
+            user = data;
+            tripBudget = user.budget;
+            departureDate = user.departureDate;
+            originCity = user.city;
+            leaveDate = user.leaveDate;
+            TripConstructor.packageTrips(originCity, tripBudget, departureDate, leaveDate).then(function (data) {
+                    tripListJson = data;
+                    res.status(200).json(tripListJson);
+                }, function (err) {
+                    console.log("could not get data");
+                }
+            );
+
+        });
+
+    }
+});
+
 
 /**
  * GET trip objects constructed to user preferences
@@ -41,26 +69,14 @@ router.get('/:trip_budget/:origin_city/:departure_date/:leave_date', function (r
     var originCity = req.params.origin_city;
     var leaveDate = req.params.leave_date;
 
-    //console.log(tripBudget);
-    /*if (user == null) {
-        getUserById(id).then(function (data) {
-            user = data;
-            tripBudget = user.budget;
-            departureDate = user.departureDate;
-            originCity = user.city;
-            leaveDate = user.leaveDate;*/
-            //tripListJson = flightInspiration(originCity, flightBudget, departureDate, duration);
-            TripConstructor.packageTrips(originCity, tripBudget, departureDate, leaveDate).then(function (data) {
-                    tripListJson = data;
-                    res.status(200).json(tripListJson);
-                }, function (err) {
-                    console.log("could not get data");
-                }
-            );
-
-        });
-
-//}});
+    TripConstructor.packageTrips(originCity, tripBudget, departureDate, leaveDate).then(function (data) {
+            tripListJson = data;
+            res.status(200).json(tripListJson);
+        }, function (err) {
+            console.log("could not get data");
+        }
+    );
+});
 /**
  * Get a user from the database with the given id
  * @param id
