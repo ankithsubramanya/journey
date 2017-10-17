@@ -1,7 +1,4 @@
-var apiKey = "HIPoUButZK43WQj0ac7JmjDIytu7LG18";
-var googleApiKey = "AIzaSyDOjFExTVI96xAH5TlLZ0_-4eRmjG9Lt-A";
-var GOOGLE_IMAGE_URL = "https://maps.googleapis.com/maps/api/place/photo?";
-var GOOGLE_RESULT_IMAGE_URL = "https://maps.googleapis.com/maps/api/place/photo?";
+var apiKey = process.env.AMADEUS_API_KEY;
 var POINTS_OF_INTEREST_URL = "https://api.sandbox.amadeus.com/v1.2/points-of-interest/yapq-search-text";
 var express = require('express');
 var app = require('../app.js');
@@ -138,11 +135,8 @@ var packageTrips = function (city, budget, departureDate, leaveDate) {
         var dailyBudget = getDailyBudget(budget, duration);
         var hotelBudget = getHotelNightBudget(budget, duration);
 
-        //var flightList = [];
         flightInspiration(city, flightBudget, departureDate, duration).then(function (data) {
             var flightList = data.results;
-            //console.log(flightList);
-            //flightList = JSON.parse(flightList);
             var requiredSize = 5;
             if (requiredSize < flightList.length) {
                 flightList = jsonChopper(flightList, requiredSize);
@@ -151,24 +145,15 @@ var packageTrips = function (city, budget, departureDate, leaveDate) {
                 flightArrayList.add(flightList[i]);
             }
             hotelAdder(departureDate, leaveDate, hotelBudget, dailyBudget).then(function (data) {
-                    /*if (data == null) {
-                        reject(err);
-                    }*/
-                    //else {
-                        resolve(data);
 
-                        /*var updatedList = data;
+                        var updatedList = data;
                         for (var i = 0; i < updatedList.length; i++){
                             listWithHotel.add(updatedList[i]);
                         }
                         (pointsOfInterestAdder(data)).then(function (data) {
-                            //if (data == null){
-                                //reject(err);
-                            //} else {
                                 resolve(data);
 
-                        });*/
-                    //}
+                        });
                 }
             )
             })
@@ -207,12 +192,11 @@ var hotelAdder = function (departureDate, leaveDate, hotelBudget, dailyBudget) {
             }
             var hotel = (data.results);
             if (hotel != undefined && hotel[0] != undefined && hotel[0].address.city != 0) {
-                //console.log(hotel[0]);
                 trip.city = hotel[0].address.city;
-                //trip.city_image_link = hotel.images[0];
                 trip.from_date = departureDate;
                 trip.to_date = leaveDate;
-                trip.total_budget = Math.floor(parseFloat((hotel[0].min_daily_rate.amount)*duration) + parseFloat(dailyBudget*duration) + parseFloat(flight.price));
+                trip.total_budget = Math.floor(parseFloat((hotel[0].min_daily_rate.amount)*duration) +
+                    parseFloat(dailyBudget*duration) + parseFloat(flight.price));
                 trip.daily_budget = dailyBudget;
                 trip.flight_string = flight.airline;
                 trip.flight_cost = flight.price;
@@ -220,7 +204,6 @@ var hotelAdder = function (departureDate, leaveDate, hotelBudget, dailyBudget) {
                 trip.hotel_night_price = hotel[0].min_daily_rate.amount;
                 trip.hotel_image_link = hotel[0].images[0];
                 trip.city_code = flight.destination;
-                //console.log(trip);
                 resultList.add(trip);
             }
             console.log(trip.city);
@@ -232,7 +215,7 @@ var hotelAdder = function (departureDate, leaveDate, hotelBudget, dailyBudget) {
 }
 
 /**
- * @TODO package poi adder into result json
+ * @TODO ensure that the method gives unique data for every city
  * Method to calculate duration of the trip given the departure and arrival date in the string format YYYY-mm-dd
  * @param departureDate
  * @param arrivalDate
