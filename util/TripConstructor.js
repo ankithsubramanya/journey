@@ -137,7 +137,7 @@ var packageTrips = function (city, budget, departureDate, leaveDate) {
 
         flightInspiration(city, flightBudget, departureDate, duration).then(function (data) {
             var flightList = data.results;
-            var requiredSize = 5;
+            var requiredSize = 9;
             if (requiredSize < flightList.length) {
                 flightList = jsonChopper(flightList, requiredSize);
             }
