@@ -1,46 +1,46 @@
 var testTrips = [
   {
-    "city" : "Bangalore",
+    "city" : "Loading",
     "image" : "http://www.wandererontheroad.com/wp-content/uploads/2015/12/bangalore.jpg",
     "total_budget" : 800
   },
   {
-    "city" : "Madrid",
+    "city" : "Loading",
     "image" : "https://lonelyplanetimages.imgix.net/a/g/hi/t/9d06864e1a551111cd5115d0310489a8-madrid.jpg?sharp=10&vib=20&w=1200",
     "total_budget" : 1300
   },
   {
-    "city" : "Bangkok",
+    "city" : "Loading",
     "image" : "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5230017886001_5219431537001-vs.jpg?pubId=5104226627001&videoId=5219431537001",
     "total_budget" : 1150
   },
   {
-    "city" : "Bangalore",
+    "city" : "Loading",
     "image" : "https://images.unsplash.com/photo-1475688621402-4257c812d6db?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=linh-nguyen-145766.jpg&s=afc6e5b6894e0647cc9ea87804f54a6c",
     "total_budget" : 800
   },
   {
-    "city" : "Madrid",
+    "city" : "Loading",
     "image" : "https://images.unsplash.com/photo-1415125721330-116ba2f81152?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=joshua-earle-2521.jpg&s=460987e06015ed0cd1638943bd94479c",
     "total_budget" : 1300
   },
   {
-    "city" : "Bangkok",
+    "city" : "Loading",
     "image" : "https://images.unsplash.com/photo-1484353371297-d8cfd2895020?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=christopher-burns-189796.jpg&s=c93d97a6947d12cbd79d5420c82e7743",
     "total_budget" : 1150
   },
   {
-    "city" : "Bangalore",
+    "city" : "Loading",
     "image" : "https://images.unsplash.com/photo-1481402492995-2e9e8d06ed45?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=mihai-surdu-173794.jpg&s=ff9ca6da2fa754238ede0d3a2fe727ba",
     "total_budget": 800
   },
   {
-    "city" : "Madrid",
+    "city" : "Loading",
     "image" : "https://images.unsplash.com/photo-1469461084727-4bfb496cf55a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=sylwia-bartyzel-114124.jpg&s=2b67714f0ae5d4f4e21c4c2115992e21",
     "total_budget" : 1300
   },
   {
-    "city" : "Bangkok",
+    "city" : "Loading",
     "image" : "https://images.unsplash.com/photo-1464038008305-ee8def75f234?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ashim-d-silva-95249.jpg&s=53a4039c19bf37f84de0e236f54d8d94",
     "total_budget" : 1150
   }

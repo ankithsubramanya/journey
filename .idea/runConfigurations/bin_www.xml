@@ -2,7 +2,7 @@
   <configuration default="false" name="bin\www" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$">
     <envs>
       <env name="DEBUG" value="NextTrip:*" />
-      <env name="AMADEUS_API_KEY" value="HIPoUButZK43WQj0ac7JmjDIytu7LG18" />
+      <env name="AMADEUS_API_KEY" value="FBIg0ZH9w6GpqX0FIlDzp51H2GffPziy" />
     </envs>
     <browser url="http://localhost:3000/" />
     <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
