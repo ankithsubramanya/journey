@@ -125,6 +125,7 @@ var flightArrayList = new ArrayList();
  */
 
 var packageTrips = function (city, budget, departureDate, leaveDate) {
+    budget = budget * 2.5 //@TODO find a better fix for this line
     resultList = new ArrayList();
     listWithHotel = new ArrayList();
     finalList = new ArrayList();
