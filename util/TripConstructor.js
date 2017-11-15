@@ -137,7 +137,7 @@ var packageTrips = function (city, budget, departureDate, leaveDate) {
 
         flightInspiration(city, flightBudget, departureDate, duration).then(function (data) {
             var flightList = data.results;
-            var requiredSize = 9;
+            var requiredSize = 20;
             if (requiredSize < flightList.length) {
                 flightList = jsonChopper(flightList, requiredSize);
             }
@@ -150,10 +150,16 @@ var packageTrips = function (city, budget, departureDate, leaveDate) {
                         for (var i = 0; i < updatedList.length; i++){
                             listWithHotel.add(updatedList[i]);
                         }
-                        (pointsOfInterestAdder(data)).then(function (data) {
+                        for (var i =0; i < listWithHotel.length; i++) {
+                            if (listWithHotel[i].city != "Failed to Load") {
+                                finalList.add(listWithHotel[i]);
+                            }
+                        }
+                        /*(pointsOfInterestAdder(data)).then(function (data) {
                                 resolve(data);
 
-                        });
+                        });*/
+                        resolve(finalList);
                 }
             )
             })
@@ -176,7 +182,7 @@ var hotelAdder = function (departureDate, leaveDate, hotelBudget, dailyBudget) {
     for (var flight of flightArrayList) {
         var resPromise = hotelSearch(flight.destination, departureDate, leaveDate, hotelBudget).then(function (data) {
             var trip = {
-                "city": "East Myrwich",
+                "city": "Failed to Load",
                 "city_image_link": "",
                 "from_date": "",
                 "to_date": "",
