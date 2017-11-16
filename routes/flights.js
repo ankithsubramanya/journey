@@ -4,9 +4,8 @@ var app = require('../app.js');
 var FLIGHTS_COLLECTION = 'flights';
 var mongodb = require('mongodb');
 var ObjectID = mongodb.ObjectID;
-var mongo_connection_uri = 'mongodb://ankith:test@ds151008.mlab.com:51008/journey';
 var db;
-mongodb.MongoClient.connect(mongo_connection_uri, function (err, database) {
+mongodb.MongoClient.connect(process.env.MONGO_CONNECTION_URI, function (err, database) {
     if (err) {
         console.log(err);
         process.exit(1);

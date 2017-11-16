@@ -8,6 +8,8 @@ var http = require('http');
 var ArrayList = require('arraylist');
 var http = require('http');
 
+
+
 // calculates daily spending budget from total budget
 var getDailyBudget = function (totalBudget, numberOfDays) {
     var d = (totalBudget / numberOfDays) * 0.1;
@@ -28,7 +30,7 @@ var getHotelNightBudget = function (totalBudget, numberOfDays) {
 /**
  * Function responsible for finding available locations for the given budget
  Sample request = http://api.sandbox.amadeus.com/v1.2/flights/inspiration-search?origin=BOS&
- departure_date=2017-12-01&duration=7--9&max_price=500&apikey=3tiT2AwHzjXBasqIEoGf7KCJaXMqWEvk
+ departure_date=2017-12-01&duration=7--9&max_price=500&apikey=API_KEY
  * @param city
  * @param flightBudget
  * @param departureDate
@@ -76,6 +78,8 @@ var jsonChopper = function (json, size) {
  * @param checkOutDate
  * @param maxPrice
  * @returns {Promise} list of hotels found based on params
+ * @TODO :At the moment, the app adds the first hotel from the json list. Make it add the first hotel in budget range
+ *
  */
 var hotelSearch = function (originCity, checkInDate, checkOutDate, maxPrice) {
     return new Promise(function (resolve, reject) {
@@ -194,8 +198,8 @@ var hotelAdder = function (departureDate, leaveDate, hotelBudget, dailyBudget) {
                 "hotel_name": "",
                 "hotel_night_price": "",
                 "hotel_image_link": "",
-                "points_of_interest" : "",
-                "city_code" : ""
+                "points_of_interest": "",
+                "city_code": ""
             }
             var hotel = (data.results);
             if (hotel != undefined && hotel[0] != undefined && hotel[0].address.city != 0) {
