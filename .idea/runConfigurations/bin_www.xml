@@ -3,6 +3,7 @@
     <envs>
       <env name="DEBUG" value="NextTrip:*" />
       <env name="AMADEUS_API_KEY" value="FBIg0ZH9w6GpqX0FIlDzp51H2GffPziy" />
+      <env name="MONGO_CONNECTION_URI" value="mongodb://ankith:test@ds151008.mlab.com:51008/journey" />
     </envs>
     <browser url="http://localhost:3000/" />
     <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
