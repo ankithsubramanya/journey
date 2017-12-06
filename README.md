@@ -1,5 +1,6 @@
-# Small World API 
-
+# Small World
+##
+Generates a custom feed of travel experiences based on user preferences (budget and calendar)
 ## Front end 
 Built with HTML, bootstrap CSS and Jquery. 
 ## Back end
